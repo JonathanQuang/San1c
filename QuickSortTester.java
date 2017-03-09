@@ -7,9 +7,9 @@
   class QuickSortTester
 
   Quick Sort ALGORITHM:
-  1. If array size is 1, return array
-  2. Else, split the array into halves (first half is smaller if array size is odd)
-  3. Sort each half of the array and merge the two halves
+   1. If bounds overlap stop.
+   2. pick center as pivot point to create a partition about.
+   3. call quick sort on two halves from the partition
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
   O(nlog(n))
@@ -24,27 +24,17 @@
 
   Mean execution times for dataset of size n:
   Batch size: 1000
-  Array Length, Average Runtime
-  50000,7517099
-  100000,13816947
-  150000,22607216
-  200000,30941182
-  250000,40110985
-  300000,48643904
-  350000,57730321
-  400000,65441816
-  450000,73281588
-  500000,84680403
-  550000,94165978
-  600000,99916277
-  650000,109352105
-  700000,122540827
-  750000,130717364
-  800000,138727958
-  850000,148570851
-  900000,159042963
-  950000,165009158
-  1000000,181331154
+  Length	Runtime
+  50000		13274452
+  100000	49017350
+  150000	107338013
+  200000	187887482
+  250000	292365332
+  300000	416992099
+  350000	566807509
+  400000	736323756
+  450000	935191968
+  500000	1147860514
 
   Sidenote
 
