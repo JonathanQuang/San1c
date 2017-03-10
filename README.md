@@ -45,3 +45,26 @@ diagram below:
   3. The list is sorted with merge sort.
   4. Difference between the new value returned from System.nanoTime() and the startTime is returned.
   5. Process is repeated the given number of times.
+  
+  
+##Data Analysis:
+Take a look at our data here:
+https://docs.google.com/document/d/135hokTsv0sx_aO1-ODnSnQAIwE1rGekAZzwXmq3DLdo/pub
+We took the experimental time it took to complete the algorithim and compared it to the nlogn expected values. We are not looking
+for differences of 0 because we do not know what coefficients are necessarily attached to nlogn. So we compare the differences
+with the difference preceding it. The relative ratios should stabilize. You can see that as the data set increases in size,
+the relative ratios begin to decrease at a decreasing rate, which means that it will eventually stabilize. This means that our
+nlogn model is somewhat reasonable.
+
+##Effects of pivot selection and data arrangement on execution time
+ The pivot selection is important. If your pivot selection results in a partition index that is nowhere near the midpoint between the
+ lower and upper bound, than you begin to approach a situation similar to the worst case scenario described above. If your pivot 
+ selection results in a partition index close to the midpoint, then you begin to reach the best case. We don't necessarily know which
+ pivot selection will result in a middle partition index. However, after applying the pivot function numerous times, the pivot selection
+ tends to be close to the midpoint of the lower and upper bound, which is why we chose the pivot selection to be the midpoint between
+ the lower and upperbound. There were arguments that a random pivot selection between the lower and upper bound was just as effective,
+ though they were given up for the sake of making data analysis more consistent.
+
+Data arrangment is important on execution time as well. Data that is closer to ascending order will result in more swaps being
+performed, which takes up time.
+
