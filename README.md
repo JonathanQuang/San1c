@@ -31,3 +31,16 @@ diagram below:
           1  2  3  4,5  
           
           1  2  3  4  5 
+
+#Methodology
+  Quick Sort ALGORITHM:
+   1. If bounds overlap stop.
+   2. pick center of the bounds as the target index in the pivot function
+   3. Call quick sort on the two parts produced by the partition index returned
+      from the pivot function.
+   Timing ALGORITHM:
+  1. A random list of given size is created.
+  2. The current time is recorded with System.nanoTime() as startTime
+  3. The list is sorted with merge sort.
+  4. Difference between the new value returned from System.nanoTime() and the startTime is returned.
+  5. Process is repeated the given number of times.
