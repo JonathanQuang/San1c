@@ -22,8 +22,8 @@ log(n) splits has the pivot function do n comparisons regardless of the size of 
 The worst case scenario occurs when the pivot index we get causes a split that creates a subsection of length 1 and length n-1. If this
 happens every single time, than there are n layers and n comparisons per layer. Therefore the worst case will be O(n^2). Look at the
 diagram below:
-          1,2,3,4,5
-          1  2,3,4,5
-          1  2   3,4,5
-          1  2  3  4,5
-          1  2  3  4  5
+          1,2,3,4,5  \n
+          1  2,3,4,5  \n 
+          1  2   3,4,5 \n
+          1  2  3  4,5  \n 
+          1  2  3  4  5  \n
