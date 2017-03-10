@@ -25,32 +25,25 @@
 
   Mean execution times for dataset of size n:
   Batch size: 1000
-  Length	Runtime
-  50000		13274452
-  100000	49017350
-  150000	107338013
-  200000	187887482
-  250000	292365332
-  300000	416992099
-  350000	566807509
-  400000	736323756
-  450000	935191968
-  500000	1147860514
+  Length,Runtime
+  50000,13274452
+  100000,49017350
+  150000,107338013
+  200000,187887482
+  250000,292365332
+  300000,416992099
+  350000,566807509
+  400000,736323756
+  450000,935191968
+  500000,1147860514
 
   Sidenote
 
   After running multiple runtime tests, we noticed that the runtime of the first few
  executions of QuickSort were significantly larger than runtimes of successive 
  executions. We found that this is because java was still initializing. To resolve
- this issue, we run a set of tests of size 10000000 that does not get displayed
+ this issue, we run a set of tests of size 5000000 that does not get displayed
  in the terminal.
-
-
-  
-  ANALYSIS:
-  In order to get some data, we calculated the average runtime of lists between size 50000 and 1000000 with increments of 50000. We then took the average runtimes and graphed them. We also graphed n, log(n), nlog(n), and n^2 runtime for comparison. The graph looked most similar to nlog(n). To confirm the runtime, we graphed lines of xnlog(n) replacing x with some arbitray number to see if it was close to matching. We also graphed lines of xlog(n) and xn to compare. From our testing we found that our data is most closely represented by the line 13nlog(n). We then concluded that the runtime of merge sort is nlog(n).
-     
-     
 
   ======================================*/
 
