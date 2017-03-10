@@ -40,7 +40,7 @@ diagram below:
       from the pivot function.
       
 
-   ##Timing ALGORITHM:
+  ##Timing ALGORITHM:
   1. A random list of given size is created.
   2. The current time is recorded with System.nanoTime() as startTime
   3. The list is sorted with merge sort.
